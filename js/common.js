@@ -1,8 +1,13 @@
 $(document).ready(function() {
 
 	$("body").niceScroll({
-		horizailenabled : false;
+		horizailenabled : false,
 	});
+
+	$(".btn_mnu").click(function() {
+	$(this).toggleClass("active");
+	$(".left_side").toggleClass("active");
+    });
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
