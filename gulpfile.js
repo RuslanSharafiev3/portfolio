@@ -1,6 +1,7 @@
-var gulp       = require('gulp'), // Подключаем Gulp
+var gulp         = require('gulp'), // Подключаем Gulp
     sass         = require('gulp-sass'), //Подключаем Sass пакет,
-    browserSync  = require('browser-sync'), // Подключаем Browser Sync
+    browserSync  = require('browser-sync').create(), // Подключаем Browser Sync
+    reload       = browserSync.reload;
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
@@ -23,9 +24,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync.init({ // Выполняем browserSync
         server: { // Определяем параметры сервера
             baseDir: './' // Директория для сервера - app
-        },
-        notify: false // Отключаем уведомления
+        }
     });
+    gulp.watch("*.html").on("change", reload);
 });
 
 gulp.task('scripts', function() {
