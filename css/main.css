@@ -32,6 +32,7 @@ body textarea:required:valid {
  z-index: 10;
  color: #fff;
  overflow-x: hidden;
+ outline: none;
  -webkit-transition: all .5s;
  -o-transition: all .5s;
  transition: all .5s;
@@ -42,7 +43,7 @@ body textarea:required:valid {
 
 }
 
-/* Кнопка в меню */
+/* Кнопка в меню .btn */
 
 .btn_mnu {
   width: 50px;
@@ -109,9 +110,9 @@ body textarea:required:valid {
   text-align: center;
   opacity: 0;
   white-space: nowrap;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 
 .left_side.active .user_info {
@@ -138,6 +139,8 @@ body textarea:required:valid {
 
 .aside_content nav {
   margin: 35px 0;
+  position: relative;
+  z-index: 5;
 
 }
 
@@ -221,3 +224,170 @@ body textarea:required:valid {
   content: "R";
 }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-posirion: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.content {
+  position: relative;
+  margin: 5px 5px 55px 55px;
+  left: 0;
+
+}
+
+.gallery a {
+  overflow: hidden;
+  width: 320px;
+  min-height: 50px;
+  display: block;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  -webkit-transition: all 15s;
+  -o-transition: all 15s;
+  transition: all 15s;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(5);
+  -ms-transform: scale(5);
+  -o-transform: scale(5);
+  transform: scale(5);
+
+}
+
+
+.left_side.active + .content {
+  left: 248px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+
+.filter_items {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  background-color: #181818;
+  padding: 10px 10px 0px;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.filter_label {
+  background-color: transparent;
+  border-color: #fff;
+  padding: 5px 15px;
+  opacity: .4;
+  margin: 0 3px 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border: 1px #fff solid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.filter_label:hover,
+.filter_label.active {
+  background-color: tomato;
+  opacity: 1;
+  border-color: tomato;
+}
+
+.mfp-content {
+  width: 100%;
+}
+
+.mfp-container {
+  padding: 0;
+}
+
+img.mfp-img {
+  display: block;
+  height: auto;
+  max-height: none !important;
+  padding: 0;
+  max-width: 100%;
+}
+
+.mfp-figure button.mfp-close {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  position: fixed;
+  text-align: center;
+  right: 8px;
+  padding: 0;
+}
+
+/* magnific library opened */
+.mfp-zoom-out-cur .gallery {
+
+}
+
+.mpf-zoom-out-cur .gallery {
+  left: -100%;
+}
+
+.mfp-figure {
+  background-color: #181818;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 1;
+
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 1;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 1;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    left: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  left: 0;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  left: 100%;
+
+}

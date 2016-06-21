@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru" class="no-js"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]>--><html lang="ru" class="no-js"> <!--<![endif]-->
 
 <head>
 
@@ -51,21 +51,51 @@
 
    <nav>
    	<ul>
-   		<li><a href="">Портфолио</a></li>
-   		<li><a href="">Обо мне</a></li>
-   		<li><a href="">Контакты</a></li>
-   		
-
-   		
+   		<li><a href="index.html">Портфолио</a></li>
+   		<li><a href="about.html">Обо мне</a></li>
+   		<li><a href="contacts.html">Контакты</a></li>		
    	</ul>
    </nav>
 
-
-   	
    </div>
 
-
 </aside>
+
+<div class="content gallery">
+	<a class="web" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/1.jpg"><img src="img/dummy.png" data-original="img/images/1.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/2.jpg"><img src="img/dummy.png" data-original="img/images/2.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/3.jpg"><img src="img/dummy.png" data-original="img/images/3.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/4.jpg"><img src="img/dummy.png" data-original="img/images/4.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/5.jpg"><img src="img/dummy.png" data-original="img/images/5.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/6.jpg"><img src="img/dummy.png" data-original="img/images/6.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/7.jpg"><img src="img/dummy.png" data-original="img/images/7.jpg" alt="Alt"></a>
+	<a class="app" href="img/images/8.jpg"><img src="img/dummy.png" data-original="img/images/8.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/9.jpg"><img src="img/dummy.png" data-original="img/images/9.jpg" alt="Alt"></a>
+	<a class="web" href="img/images/10.jpg"><img src="img/dummy.png" data-original="img/images/10.jpg" alt="Alt"></a>
+</div>
+
+<div class="filter_items">
+<button class="filter_label active">Все</button>
+<button class="filter_label" data-filter=".web">Сайты</button>
+<button class="filter_label" data-filter=".app">Приложения</button>
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -73,7 +103,12 @@
 
 
 	
-	<div class="hidden"></div>
+     <div class="hidden"></div>
+
+    <div class="loader">
+	   <div class="loader_inner"></div>
+    </div>
+
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -88,6 +123,7 @@
 	<script src="libs/freewall/freewall.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+	<script src="libs/lazyload/jquery.lazyload.min.js"></script>
 		
 	<script src="js/common.js"></script>
 	
