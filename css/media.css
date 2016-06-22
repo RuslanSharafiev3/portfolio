@@ -24,6 +24,21 @@
 	.filter_label {
 		margin: 0 3px 10px
 	}
+
+	.inside .content {
+		padding: 50px 5% 40px;
+	}
+
+	.content_header img {
+		width: 180px;
+		height: 180px;
+		margin-bottom: 20px;
+
+	}
+
+	.form_contacts form {
+		padding: 15px;
+	}
 }
 
 /* Custom, iPhone Retina */
