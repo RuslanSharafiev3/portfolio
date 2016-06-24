@@ -208,19 +208,18 @@ body textarea:required:valid {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-
 }
 
 
-.aside_content li:ntn-chilldren(1) a::before {
+.aside_content li :ntn-child(1) a::before {
   content: "u";
 }
 
-.aside_content li:ntn-chilldren(2) a::before {
+.aside_content li :ntn-child(2) a::before {
   content: "{";
 }
 
-.aside_content li:ntn-chilldren(3) a::before {
+.aside_content li :ntn-child(3) a::before {
   content: "R";
 }
 
