@@ -198,7 +198,7 @@ body textarea:required:valid {
 
 .aside_content li a::before {
   display: inline-block;
-  font-family: "linea-basic-10";
+  font-family: "linea-basic-1.0";
   font-size: 25px;
   line-height: 0;
   margin-left: -58px;
@@ -211,17 +211,24 @@ body textarea:required:valid {
 }
 
 
-.aside_content li :ntn-child(1) a::before {
+.aside_content li:ntn-child(1) a::before {
   content: "u";
 }
 
-.aside_content li :ntn-child(2) a::before {
+.aside_content li:ntn-child(2) a::before {
   content: "{";
 }
 
-.aside_content li :ntn-child(3) a::before {
+.aside_content li:ntn-child(3) a::before {
   content: "R";
 }
+
+
+
+.icon-basic-case::before {
+    content: "u";
+}
+
 
 .loader {
   background: none repeat scroll 0 0 #ffffff;
